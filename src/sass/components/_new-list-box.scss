@@ -1,0 +1,99 @@
+.new-list-box {
+    padding: 3rem;
+
+    &__primary {
+        padding: 2rem;
+
+        &--text {
+            width: 35vw;
+            height: 3rem;
+            border: 1px solid $color-primary-dark;
+            border-radius: 10px;
+            background-image: linear-gradient($color-primary, $color-primary-light);
+            outline: none;
+            transition: all .3s;
+            color: $color-white;font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-size: 2rem;
+            box-shadow: 0 1rem 2rem  rgba($color-black, .3);
+            margin-right: 1rem;
+            &:focus{
+               margin-top: .5rem;
+               border-radius: 0;
+               box-shadow: 1rem 2.5rem 4rem  rgba($color-black, .3);
+            }
+        }
+    }
+
+    &__options {
+        opacity: 0;
+        transition: all .3s;//erytgreter
+    }
+
+    &__option{
+        &-radio {
+            display: none;
+        }
+        margin-right: 3rem;
+    }
+    
+    &__label {
+        font-size: $default-font-size;
+        cursor: pointer;
+
+        &-radio-button {
+            margin-bottom: -.5rem;
+            position: relative;
+            height: 2.2rem;
+            width: 2.2rem;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: .5rem;
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                content: '';
+                display: block;
+                height: .8rem;
+                width: .8rem;
+                border-radius: 50%;
+                opacity: 0;
+                transition: opacity .2s;
+            }
+
+            &--1 {
+                border: 5px solid $color-urgent;
+                &::after {
+                    background-color: $color-urgent;
+                }
+            }
+            &--2 {
+                border: 5px solid $color-importand;
+                &::after {
+                    background-color: $color-importand;
+                }
+            }
+            &--3 {
+                border: 5px solid $color-primary-light;
+                &::after {
+                    background-color: $color-primary-light;
+                }
+            }
+        }
+    }
+
+    &__option-radio:checked ~ &__label &__label-radio-button::after {
+        opacity: 1;
+    }
+
+    &__list {
+        list-style: none;
+
+        li {
+            display: inline;
+        }
+    }
+}

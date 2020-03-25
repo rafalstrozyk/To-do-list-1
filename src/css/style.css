@@ -1,2 +1,153 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: red; }
+  box-sizing: border-box; }
+
+::placeholder {
+  color: #ffffff;
+  opacity: .5; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-bottom: 10rem !important; }
+
+.new-list-box {
+  padding: 3rem; }
+  .new-list-box__primary {
+    padding: 2rem; }
+    .new-list-box__primary--text {
+      width: 35vw;
+      height: 3rem;
+      border: 1px solid #48466d;
+      border-radius: 10px;
+      background-image: linear-gradient(#3d84a8, #46cdcf);
+      outline: none;
+      transition: all .3s;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 2rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+      margin-right: 1rem; }
+      .new-list-box__primary--text:focus {
+        margin-top: .5rem;
+        border-radius: 0;
+        box-shadow: 1rem 2.5rem 4rem rgba(0, 0, 0, 0.3); }
+  .new-list-box__options {
+    opacity: 0;
+    transition: all .3s; }
+  .new-list-box__option {
+    margin-right: 3rem; }
+    .new-list-box__option-radio {
+      display: none; }
+  .new-list-box__label {
+    font-size: 1.6rem;
+    cursor: pointer; }
+    .new-list-box__label-radio-button {
+      margin-bottom: -.5rem;
+      position: relative;
+      height: 2.2rem;
+      width: 2.2rem;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: .5rem; }
+      .new-list-box__label-radio-button::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        display: block;
+        height: .8rem;
+        width: .8rem;
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity .2s; }
+      .new-list-box__label-radio-button--1 {
+        border: 5px solid #ff165d; }
+        .new-list-box__label-radio-button--1::after {
+          background-color: #ff165d; }
+      .new-list-box__label-radio-button--2 {
+        border: 5px solid #ff9a00; }
+        .new-list-box__label-radio-button--2::after {
+          background-color: #ff9a00; }
+      .new-list-box__label-radio-button--3 {
+        border: 5px solid #46cdcf; }
+        .new-list-box__label-radio-button--3::after {
+          background-color: #46cdcf; }
+  .new-list-box__option-radio:checked ~ .new-list-box__label .new-list-box__label-radio-button::after {
+    opacity: 1; }
+  .new-list-box__list {
+    list-style: none; }
+    .new-list-box__list li {
+      display: inline; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  display: inline-block;
+  position: relative;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transition: all .3s;
+  cursor: pointer;
+  border: none;
+  outline: none; }
+  .btn:hover, .btn:link:hover, .btn:visited:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
