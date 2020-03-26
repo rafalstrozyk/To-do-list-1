@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>To do list</title>
 </head>
@@ -13,7 +14,7 @@
             <input type="text" class="new-list-box__primary--text" placeholder="Add to-do">
             <button class="btn btn--primary" id="btn-add">Add</button> 
         </div>
-        <div class="new-list-box__options">
+        <!-- <div class="new-list-box__options" id="new-list-box__options">
             <ul class="new-list-box__list">
                 <li class="new-list-box__option">
                     <input type="radio" name="to-do-oprion" class="new-list-box__option-radio" id="urgent">
@@ -37,31 +38,61 @@
                     </label>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 
     <div class="todo-list u-center-object u-margin-top-medium">
         <ul class="todo-list__box">
-            <li class="todo-list__item">gredgtergerregerger<span>Kosz</span><br>
-                <div class="radio-box__options">
+
+            <li class="todo-list__item todo-list__item--urgent" id="urg-1">gredgtejhgjghjghjghjghjghjghjghjghjghjghjghjghjghjghjrgerregerger<span><i class="icon-basic-trashcan-remove"></i></span>
+                <button class="btn-edit todo-list__item-button">Edit</button>
+                <!-- <div class="radio-box__options">
                     <ul class="radio-box__list">
                         <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="urgent-edit">
-                            <label class="radio-box__label" for="urgent-edit">
+                            <input type="radio" checked name="to-do-oprion-urg-1" class="radio-box__option-radio" id="urgent-edit-urg-1">
+                            <label class="radio-box__label" for="urgent-edit-urg-1">
                                 <span class="radio-box__label-radio-button radio-box__label-radio-button--1"></span>
                                 Urgent
                             </label>
                         </li>
                         <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="importand-edit">
-                            <label class="radio-box__label" for="importand-edit">
+                            <input type="radio" name="to-do-oprion-urg-1" class="radio-box__option-radio" id="importand-edit-urg-1">
+                            <label class="radio-box__label" for="importand-edit-urg-1">
                                 <span class="radio-box__label-radio-button radio-box__label-radio-button--2"></span>
                                 Importand
                             </label>
                         </li>
                         <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="to-do-edit">
-                            <label class="radio-box__label" for="to-do-edit">
+                            <input type="radio" name="to-do-oprion-urg-1" class="radio-box__option-radio" id="to-do-edit-urg-1">
+                            <label class="radio-box__label" for="to-do-edit-urg-1">
+                                <span class="radio-box__label-radio-button radio-box__label-radio-button--3"></span>
+                                To do
+                            </label>
+                        </li>
+                    </ul>
+                </div> -->
+            </li>
+
+            <li class="todo-list__item todo-list__item--importand" id="imp-1">gredgtergerregerger<span>Kosz</span><br>
+                <div class="radio-box__options">
+                    <ul class="radio-box__list">
+                        <li class="radio-box__option">
+                            <input type="radio" name="to-do-oprion-imp-1" class="radio-box__option-radio" id="urgent-edit-imp-1">
+                            <label class="radio-box__label" for="urgent-edit-imp-1">
+                                <span class="radio-box__label-radio-button radio-box__label-radio-button--1"></span>
+                                Urgent
+                            </label>
+                        </li>
+                        <li class="radio-box__option">
+                            <input type="radio" name="to-do-oprion-imp-1" checked class="radio-box__option-radio" id="importand-edit-imp-1">
+                            <label class="radio-box__label" for="importand-edit-imp-1">
+                                <span class="radio-box__label-radio-button radio-box__label-radio-button--2"></span>
+                                Importand
+                            </label>
+                        </li>
+                        <li class="radio-box__option">
+                            <input type="radio" name="to-do-oprion-imp-1" class="radio-box__option-radio" id="to-do-edit-imp-1">
+                            <label class="radio-box__label" for="to-do-edit-imp-1">
                                 <span class="radio-box__label-radio-button radio-box__label-radio-button--3"></span>
                                 To do
                             </label>
@@ -69,80 +100,27 @@
                     </ul>
                 </div>
             </li>
-            <li class="todo-list__item">gredgtergerregerger<span>Kosz</span><br>
+
+            <li class="todo-list__item todo-list__item--to-do" id="to-do-1">gredgtergerregerger<span>Kosz</span><br>
                 <div class="radio-box__options">
                     <ul class="radio-box__list">
                         <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="urgent-edit">
-                            <label class="radio-box__label" for="urgent-edit">
+                            <input type="radio" name="to-do-oprion-to-do-1" class="radio-box__option-radio" id="urgent-edit-to-do-1">
+                            <label class="radio-box__label" for="urgent-edit-to-do-1">
                                 <span class="radio-box__label-radio-button radio-box__label-radio-button--1"></span>
                                 Urgent
                             </label>
                         </li>
                         <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="importand-edit">
-                            <label class="radio-box__label" for="importand-edit">
+                            <input type="radio" name="to-do-oprion-to-do-1" class="radio-box__option-radio" id="importand-edit-to-do-1">
+                            <label class="radio-box__label" for="importand-edit-to-do-1">
                                 <span class="radio-box__label-radio-button radio-box__label-radio-button--2"></span>
                                 Importand
                             </label>
                         </li>
                         <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="to-do-edit">
-                            <label class="radio-box__label" for="to-do-edit">
-                                <span class="radio-box__label-radio-button radio-box__label-radio-button--3"></span>
-                                To do
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="todo-list__item">gredgtergerregerger<span>Kosz</span><br>
-                <div class="radio-box__options">
-                    <ul class="radio-box__list">
-                        <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="urgent-edit">
-                            <label class="radio-box__label" for="urgent-edit">
-                                <span class="radio-box__label-radio-button radio-box__label-radio-button--1"></span>
-                                Urgent
-                            </label>
-                        </li>
-                        <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="importand-edit">
-                            <label class="radio-box__label" for="importand-edit">
-                                <span class="radio-box__label-radio-button radio-box__label-radio-button--2"></span>
-                                Importand
-                            </label>
-                        </li>
-                        <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="to-do-edit">
-                            <label class="radio-box__label" for="to-do-edit">
-                                <span class="radio-box__label-radio-button radio-box__label-radio-button--3"></span>
-                                To do
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="todo-list__item">gredgtergerregerger<span>Kosz</span><br>
-                <div class="radio-box__options">
-                    <ul class="radio-box__list">
-                        <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="urgent-edit">
-                            <label class="radio-box__label" for="urgent-edit">
-                                <span class="radio-box__label-radio-button radio-box__label-radio-button--1"></span>
-                                Urgent
-                            </label>
-                        </li>
-                        <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="importand-edit">
-                            <label class="radio-box__label" for="importand-edit">
-                                <span class="radio-box__label-radio-button radio-box__label-radio-button--2"></span>
-                                Importand
-                            </label>
-                        </li>
-                        <li class="radio-box__option">
-                            <input type="radio" name="to-do-oprion" class="radio-box__option-radio" id="to-do-edit">
-                            <label class="radio-box__label" for="to-do-edit">
+                            <input type="radio" name="to-do-oprion-to-do-1" checked class="radio-box__option-radio" id="to-do-edit-to-do-1">
+                            <label class="radio-box__label" for="to-do-edit-to-do-1">
                                 <span class="radio-box__label-radio-button radio-box__label-radio-button--3"></span>
                                 To do
                             </label>

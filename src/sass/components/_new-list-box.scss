@@ -26,8 +26,9 @@
     }
 
     &__options {
-        opacity: 0;
+        opacity: 1;
         transition: all .3s;
+        animation: moveInTop 1s;
     }
 
     &__option{

@@ -1,3 +1,19 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::after,
 *::before {
@@ -145,8 +161,9 @@ body {
         border-radius: 0;
         box-shadow: 1rem 2.5rem 4rem rgba(0, 0, 0, 0.3); }
   .new-list-box__options {
-    opacity: 0;
-    transition: all .3s; }
+    opacity: 1;
+    transition: all .3s;
+    animation: moveInTop 1s; }
   .new-list-box__option {
     margin-right: 3rem; }
     .new-list-box__option-radio {
@@ -196,9 +213,31 @@ body {
 .todo-list {
   padding: 5rem;
   color: #abedd8;
-  background-color: #48466d; }
-  .todo-list__item:hover .radio-box__options {
-    opacity: 1; }
+  background-color: #48466d;
+  border-radius: 1rem; }
+  .todo-list__item {
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border-left: 2px solid #abedd8;
+    border-right: 2px solid #abedd8;
+    border-top: 2px solid #abedd8; }
+    .todo-list__item:last-child {
+      border-bottom: 2px solid #abedd8; }
+    .todo-list__item:hover .radio-box__options {
+      opacity: 1; }
+    .todo-list__item:hover .todo-list__item-button {
+      opacity: 1; }
+    .todo-list__item-button {
+      opacity: 0;
+      transition: all .3s; }
+    .todo-list__item--to-do {
+      background-color: #46cdcf; }
+    .todo-list__item--importand {
+      background-color: #ff9a00; }
+    .todo-list__item--urgent {
+      background-color: #ff165d; }
 
 .row {
   max-width: 114rem;
