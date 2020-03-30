@@ -21,7 +21,7 @@ export default function efects() {
                     </label>
                 </li>
                 <li class="new-list-box__option">
-                    <input type="radio" name="to-do-oprion" class="new-list-box__option-radio" id="to-do">
+                    <input type="radio" name="to-do-oprion" class="new-list-box__option-radio" checked id="to-do">
                     <label class="new-list-box__label" for="to-do">
                         <span class="new-list-box__label-radio-button new-list-box__label-radio-button--3"></span>
                         To do
@@ -30,9 +30,9 @@ export default function efects() {
             </ul>
         </div>
     `
-        let element = document.getElementById('new-list-box__options')
+        const element = document.getElementById('new-list-box__options')
         if(typeof(element) != 'undefined' && element != null) {
-            console.log("Istnieje");
+        
         } else {
             elements.new_list_box.insertAdjacentHTML('beforeend', html);
         }
@@ -45,6 +45,7 @@ export default function efects() {
             setTimeout(() => {element.remove();}, 300);
         }
     });
+
 }
 
 

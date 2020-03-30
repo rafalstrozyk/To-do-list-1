@@ -26,3 +26,30 @@
         color: $color-primary-light;
     }
 }
+
+.btn-edit {
+    &,
+    &:link,
+    &:visited {
+         text-transform: uppercase;
+         text-decoration: none;
+         padding: .5rem;
+         display: inline-block;
+         position: relative;
+         font-size: 1rem;
+         cursor: pointer;
+         border: none;
+         outline: none;
+         transition: all .3s;
+         text-align: center;
+
+         color: $color-primary;
+         background-color: $color-primary-dark;
+         border: .1rem solid $color-primary-light;
+     }
+
+     &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        color: $color-primary-light;
+     }
+}

@@ -3,12 +3,39 @@
     color: $color-secondary-light;
     background-color: $color-primary-dark;
     border-radius: 1rem;
+    position: absolute;
+
+    &__edit {
+        opacity: 0;
+        background-color: $color-primary;
+        display: inline-block;
+        padding: 1rem;
+        margin-left: .4rem; 
+        text-align: center;
+        transition: all .3s;
+
+        &-button {
+            transform: translateY(-.6rem);
+        }
+
+        &-trash {
+            color: $color-importand;
+            font-size: 2rem;
+            transition: all .3s;
+            cursor: pointer;
+            margin-right: 1rem;
+            
+            &:hover {
+                color: $color-urgent;
+            }
+        }
+    }
 
     &__item {
         list-style: none;
         text-align: center;
         font-size: 2rem;
-        padding: 1rem;
+        padding-left: .5rem;
         
         border-left: 2px solid $color-secondary-light;
         border-right: 2px solid $color-secondary-light;
@@ -17,20 +44,13 @@
             border-bottom: 2px solid $color-secondary-light;
         }
 
-        &:hover {
-            .radio-box__options {
-                    opacity: 1;
-                    
-            }  
-            .todo-list__item-button {
-                opacity: 1;
-                
-            }   
+        &-text {
+            display: inline-block;
+            padding: 1rem;
         }
 
-        &-button {
-            opacity: 0;
-            transition: all .3s;
+        &:hover .todo-list__edit {
+            opacity: 1;
         }
 
         &--to-do {

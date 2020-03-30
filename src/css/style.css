@@ -138,6 +138,26 @@ body {
   background-color: #3d84a8;
   color: #46cdcf; }
 
+.btn-edit, .btn-edit:link, .btn-edit:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .5rem;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all .3s;
+  text-align: center;
+  color: #3d84a8;
+  background-color: #48466d;
+  border: 0.1rem solid #46cdcf; }
+
+.btn-edit:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: #46cdcf; }
+
 .new-list-box {
   padding: 3rem; }
   .new-list-box__primary {
@@ -214,24 +234,41 @@ body {
   padding: 5rem;
   color: #abedd8;
   background-color: #48466d;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  position: absolute; }
+  .todo-list__edit {
+    opacity: 0;
+    background-color: #3d84a8;
+    display: inline-block;
+    padding: 1rem;
+    margin-left: .4rem;
+    text-align: center;
+    transition: all .3s; }
+    .todo-list__edit-button {
+      transform: translateY(-0.6rem); }
+    .todo-list__edit-trash {
+      color: #ff9a00;
+      font-size: 2rem;
+      transition: all .3s;
+      cursor: pointer;
+      margin-right: 1rem; }
+      .todo-list__edit-trash:hover {
+        color: #ff165d; }
   .todo-list__item {
     list-style: none;
     text-align: center;
     font-size: 2rem;
-    padding: 1rem;
+    padding-left: .5rem;
     border-left: 2px solid #abedd8;
     border-right: 2px solid #abedd8;
     border-top: 2px solid #abedd8; }
     .todo-list__item:last-child {
       border-bottom: 2px solid #abedd8; }
-    .todo-list__item:hover .radio-box__options {
+    .todo-list__item-text {
+      display: inline-block;
+      padding: 1rem; }
+    .todo-list__item:hover .todo-list__edit {
       opacity: 1; }
-    .todo-list__item:hover .todo-list__item-button {
-      opacity: 1; }
-    .todo-list__item-button {
-      opacity: 0;
-      transition: all .3s; }
     .todo-list__item--to-do {
       background-color: #46cdcf; }
     .todo-list__item--importand {
