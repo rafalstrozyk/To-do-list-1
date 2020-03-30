@@ -1,4 +1,6 @@
-export const Imp = (id, text) => {
-    this.id = id;
-    this.text = text;
+export default class Imp {
+    constructor(id, text) {
+        this.id = id;
+        this.text = text;
+    }
 }

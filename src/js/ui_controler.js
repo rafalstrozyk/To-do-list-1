@@ -18,7 +18,7 @@ export const addItem = (option, object) => {
             // elements.to_do_list_box.insertAdjacentHTML('beforeend' ,newItem)
             console.log('Error');
         } else {
-            elements.to_do_list_box.insertAdjacentHTML('beforeend' ,newItem);
+            elements.to_do_list_box.insertAdjacentHTML('afterbegin' ,newItem);
         }
 
 };

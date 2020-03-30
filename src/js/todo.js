@@ -1,4 +1,6 @@
-export const Todo = (id, text) => {
-    this.id = id;
-    this.text = text;
+export default class Todo {
+    constructor(id, text) {
+        this.id = id;
+        this.text = text;
+    }
 }

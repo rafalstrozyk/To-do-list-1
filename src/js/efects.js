@@ -7,21 +7,21 @@ export default function efects() {
         <div class="new-list-box__options" id="new-list-box__options">
             <ul class="new-list-box__list">
                 <li class="new-list-box__option">
-                    <input type="radio" name="to-do-oprion" class="new-list-box__option-radio" id="urgent">
+                    <input type="radio" value="urgent" name="to-do-option" class="new-list-box__option-radio" id="urgent">
                     <label class="new-list-box__label" for="urgent">
                         <span class="new-list-box__label-radio-button new-list-box__label-radio-button--1"></span>
                         Urgent
                     </label>
                 </li>
                 <li class="new-list-box__option">
-                    <input type="radio" name="to-do-oprion" class="new-list-box__option-radio" id="importand">
+                    <input type="radio" value="importand" name="to-do-option" class="new-list-box__option-radio" id="importand">
                     <label class="new-list-box__label" for="importand">
                         <span class="new-list-box__label-radio-button new-list-box__label-radio-button--2"></span>
                         Importand
                     </label>
                 </li>
                 <li class="new-list-box__option">
-                    <input type="radio" name="to-do-oprion" class="new-list-box__option-radio" checked id="to-do">
+                    <input type="radio" value="to-do" name="to-do-option" class="new-list-box__option-radio" checked id="to-do">
                     <label class="new-list-box__label" for="to-do">
                         <span class="new-list-box__label-radio-button new-list-box__label-radio-button--3"></span>
                         To do
