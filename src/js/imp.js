@@ -1,6 +1,7 @@
 export default class Imp {
-    constructor(id, text) {
+    constructor(id, numID, text) {
         this.id = id;
         this.text = text;
+        this.numID = numID;
     }
 }
