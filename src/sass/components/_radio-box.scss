@@ -40,21 +40,21 @@
             }
 
             &--1 {
-                border: 5px solid $color-urgent;
+                border: 5px solid $color-urgent-1;
                 &::after {
-                    background-color: $color-urgent;
+                    background-color: $color-urgent-2;
                 }
             }
             &--2 {
-                border: 5px solid $color-importand;
+                border: 5px solid $color-importand-1;
                 &::after {
-                    background-color: $color-importand;
+                    background-color: $color-importand-2;
                 }
             }
             &--3 {
-                border: 5px solid $color-primary-light;
+                border: 5px solid $color-to-do-1;
                 &::after {
-                    background-color: $color-primary-light;
+                    background-color: $color-to-do-2;
                 }
             }
         }

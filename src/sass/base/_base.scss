@@ -12,6 +12,12 @@ html {
 
 body {
     box-sizing: border-box;
+    // background: #DA4453;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-45deg, #00fff5, #393e46, #00adb5, #222831);
+	background-size: 1000% 1000%;
+	animation: gradient 15s ease infinite;
 }
 
 ::placeholder {

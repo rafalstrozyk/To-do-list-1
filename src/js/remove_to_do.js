@@ -25,10 +25,11 @@ export default function remove_to_do() {
 
             soughtItem.forEach((item_x) => {
                 if(item_x.id === element_id) {
-                    data.allItems[opcjon].splice(1, i);
+                    data.allItems[opcjon].splice(i, 1);
                     i = 0;
+                } else {
+                    i++
                 }
-                i++
             });
         });
     });

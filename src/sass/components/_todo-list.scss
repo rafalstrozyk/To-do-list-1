@@ -1,16 +1,18 @@
 .todo-list { 
-    padding: 5rem;
-    color: $color-secondary-light;
-    background-color: $color-primary-dark;
+    padding: 1rem;
+    color: $color-grey-light-1;
+    background: $color-list-back-1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color-list-back-2, $color-list-back-3, $color-list-back-1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color-list-back-2, $color-list-back-3, $color-list-back-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border-radius: 1rem;
     position: absolute;
 
     &__edit {
         opacity: 0;
-        background-color: $color-primary;
-        display: inline-block;
+        background-color: $color-primary-dark;
         padding: 1rem;
-        margin-left: .4rem; 
+        float: right;
         text-align: center;
         transition: all .3s;
 
@@ -19,14 +21,13 @@
         }
 
         &-trash {
-            color: $color-importand;
+            color: $color-importand-2;
             font-size: 2rem;
             transition: all .3s;
             cursor: pointer;
-            margin-right: 1rem;
             
             &:hover {
-                color: $color-urgent;
+                color: $color-urgent-2;
             }
         }
     }
@@ -35,13 +36,12 @@
         list-style: none;
         text-align: center;
         font-size: 2rem;
-        padding-left: .5rem;
         
-        border-left: 2px solid $color-secondary-light;
-        border-right: 2px solid $color-secondary-light;
-        border-top: 2px solid $color-secondary-light;
+        border-left: 1px solid $color-grey-dark-2;
+        border-right: 1px solid $color-grey-dark-2;
+        border-top: 1px solid $color-grey-dark-2;
         &:last-child {
-            border-bottom: 2px solid $color-secondary-light;
+            border-bottom: 1px solid $color-grey-dark-2;
         }
 
         &-text {
@@ -54,15 +54,23 @@
         }
 
         &--to-do {
-            background-color: $color-primary-light;
+            background: $color-to-do-1;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, $color-to-do-2, $color-to-do-1);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, $color-to-do-2, $color-to-do-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
         }
 
         &--importand {
-            background-color: $color-importand;
+            background: $color-importand-1;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, $color-importand-2, $color-importand-1);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, $color-importand-2, $color-importand-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
         }
 
         &--urgent {
-            background-color: $color-urgent;
+            background: $color-urgent-1;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, $color-urgent-2, $color-urgent-1);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, $color-urgent-2, $color-urgent-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
         }
     }
 }

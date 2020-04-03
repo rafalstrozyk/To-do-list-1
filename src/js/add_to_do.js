@@ -25,4 +25,5 @@ export default function addToDo() {
         // Reset input 
         elements.new_list_box_text_input.value = '';
     }
+
 }

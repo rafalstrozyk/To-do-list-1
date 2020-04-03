@@ -1,7 +1,5 @@
 @import "abstract/variables";
 @import "abstract/functions";
-@import "abstract/mixins";
-
 
 @import "base/animations";
 @import "base/base";
@@ -13,12 +11,8 @@
 @import "components/btn";
 @import "components/new-list-box";
 @import "components/todo-list";
+@import "components/title";
 
 
-
-// Layout
-@import "layout/grid";
-
-@import "pages/home";
 
 

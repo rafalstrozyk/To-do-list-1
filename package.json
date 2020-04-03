@@ -13,6 +13,7 @@
   "author": "Rafał Stróżyk",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^4.0.2",
     "html-webpack-plugin": "^4.0.1",
     "node-sass": "^4.13.1",
     "webpack": "^4.42.1",
